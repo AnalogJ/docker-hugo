@@ -2,7 +2,6 @@ FROM debian:wheezy
 MAINTAINER jason@thesparktree.com
 
 # Install pygments (for syntax highlighting) 
-RUN apt-add-repository ppa:git-core/ppa
 RUN apt-get -qq update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git \
 	&& rm -rf /var/lib/apt/lists/*
