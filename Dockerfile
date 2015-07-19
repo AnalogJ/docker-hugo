@@ -3,7 +3,7 @@ MAINTAINER jason@thesparktree.com
 
 # Install pygments (for syntax highlighting) 
 RUN apt-get -qq update \
-	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git \
+	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y python-pygments git \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Download and install hugo
